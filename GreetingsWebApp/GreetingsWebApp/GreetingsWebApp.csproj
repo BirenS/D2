@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -166,6 +167,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="sagar\GreetingCardMaker.aspx" />
     <Content Include="sagar_106.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -307,6 +309,13 @@
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sagar\GreetingCardMaker.aspx.cs">
+      <DependentUpon>GreetingCardMaker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sagar\GreetingCardMaker.aspx.designer.cs">
+      <DependentUpon>GreetingCardMaker.aspx</DependentUpon>
+    </Compile>
     <Compile Include="sagar_106.aspx.cs">
       <DependentUpon>sagar_106.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
