@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -200,6 +201,20 @@
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
+    <Content Include="VIVEK\index.jpg" />
+    <Content Include="VIVEK\v1_vivek_99.aspx" />
+    <Content Include="VIVEK\v2_vivek_99.aspx" />
+    <Content Include="VIVEK\v3_vivek_99.aspx" />
+    <Content Include="VIVEK\v4_vivek_99.aspx" />
+    <Content Include="VIVEK\v5_vivek_99.aspx" />
+    <Content Include="VIVEK\v6_1_vivek_99.aspx" />
+    <Content Include="VIVEK\v6_2_vivek_99.aspx" />
+    <Content Include="VIVEK\v7_1_vivek_99.aspx" />
+    <Content Include="VIVEK\v7_2_vivek_99.aspx" />
+    <Content Include="VIVEK\v8_1_vivek_99.aspx" />
+    <Content Include="VIVEK\v8_2_vivek_99.aspx" />
+    <Content Include="VIVEK\v9_1_vivek_99.aspx" />
+    <Content Include="VIVEK\v9_2_vivek_99.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <None Include="Project_Readme.html" />
@@ -327,6 +342,97 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VIVEK\v1_vivek_99.aspx.cs">
+      <DependentUpon>v1_vivek_99.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VIVEK\v1_vivek_99.aspx.designer.cs">
+      <DependentUpon>v1_vivek_99.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VIVEK\v2_vivek_99.aspx.cs">
+      <DependentUpon>v2_vivek_99.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VIVEK\v2_vivek_99.aspx.designer.cs">
+      <DependentUpon>v2_vivek_99.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VIVEK\v3_vivek_99.aspx.cs">
+      <DependentUpon>v3_vivek_99.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VIVEK\v3_vivek_99.aspx.designer.cs">
+      <DependentUpon>v3_vivek_99.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VIVEK\v4_vivek_99.aspx.cs">
+      <DependentUpon>v4_vivek_99.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VIVEK\v4_vivek_99.aspx.designer.cs">
+      <DependentUpon>v4_vivek_99.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VIVEK\v5_vivek_99.aspx.cs">
+      <DependentUpon>v5_vivek_99.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VIVEK\v5_vivek_99.aspx.designer.cs">
+      <DependentUpon>v5_vivek_99.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VIVEK\v6_1_vivek_99.aspx.cs">
+      <DependentUpon>v6_1_vivek_99.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VIVEK\v6_1_vivek_99.aspx.designer.cs">
+      <DependentUpon>v6_1_vivek_99.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VIVEK\v6_2_vivek_99.aspx.cs">
+      <DependentUpon>v6_2_vivek_99.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VIVEK\v6_2_vivek_99.aspx.designer.cs">
+      <DependentUpon>v6_2_vivek_99.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VIVEK\v7_1_vivek_99.aspx.cs">
+      <DependentUpon>v7_1_vivek_99.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VIVEK\v7_1_vivek_99.aspx.designer.cs">
+      <DependentUpon>v7_1_vivek_99.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VIVEK\v7_2_vivek_99.aspx.cs">
+      <DependentUpon>v7_2_vivek_99.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VIVEK\v7_2_vivek_99.aspx.designer.cs">
+      <DependentUpon>v7_2_vivek_99.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VIVEK\v8_1_vivek_99.aspx.cs">
+      <DependentUpon>v8_1_vivek_99.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VIVEK\v8_1_vivek_99.aspx.designer.cs">
+      <DependentUpon>v8_1_vivek_99.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VIVEK\v8_2_vivek_99.aspx.cs">
+      <DependentUpon>v8_2_vivek_99.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VIVEK\v8_2_vivek_99.aspx.designer.cs">
+      <DependentUpon>v8_2_vivek_99.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VIVEK\v9_1_vivek_99.aspx.cs">
+      <DependentUpon>v9_1_vivek_99.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VIVEK\v9_1_vivek_99.aspx.designer.cs">
+      <DependentUpon>v9_1_vivek_99.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VIVEK\v9_2_vivek_99.aspx.cs">
+      <DependentUpon>v9_2_vivek_99.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VIVEK\v9_2_vivek_99.aspx.designer.cs">
+      <DependentUpon>v9_2_vivek_99.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
