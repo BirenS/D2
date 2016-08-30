@@ -5,6 +5,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Drawing.Text;
+using System.ComponentModel;
 
 namespace GreetingsWebApp.sagar
 {
@@ -14,17 +16,37 @@ namespace GreetingsWebApp.sagar
         {
             if (!this.IsPostBack)
             {
-                lstBackColor.Items.Add("white");
+                string[] colorArray = Enum.GetNames(typeof(KnownColor));
+                lstBackColor.DataSource = colorArray;
+                lstBackColor.DataBind();
+
+
+
+              /*  lstBackColor.Items.Add("white");
                 lstBackColor.Items.Add("red");
                 lstBackColor.Items.Add("green");
                 lstBackColor.Items.Add("blue");
                 lstBackColor.Items.Add("yellow");
+                */
+                InstalledFontCollection fonts = new InstalledFontCollection();
+                foreach (FontFamily family in fonts.Families)
+                {
+                    lstFontName.Items.Add(family.Name);
 
+                }
+
+                /*
                 lstFontName.Items.Add("Times New roman");
                 lstFontName.Items.Add("Arial");
                 lstFontName.Items.Add("Verdana");
                 lstFontName.Items.Add("Tahoma");
+                */
 
+                string[] borderStyleArray = Enum.GetNames(typeof(BorderStyle));
+                lstBorder.DataSource = borderStyleArray;
+                lstBorder.DataBind();
+
+                /*
                 ListItem item = new ListItem();
 
                 item.Text = BorderStyle.None.ToString();
@@ -33,7 +55,7 @@ namespace GreetingsWebApp.sagar
 
                 lstBorder.Items.Add(item);
 
-                lstBorder.SelectedIndex = 0;
+                lstBorder.SelectedIndex = 0;*/
                 imgDefault.ImageUrl = "default.JPG";
             }
         }
@@ -48,9 +70,11 @@ namespace GreetingsWebApp.sagar
                 lblGreeting.Font.Size = FontUnit.Point(Int32.Parse(txtFontSize.Text));
 
             }
-            int borderValue = Int32.Parse(lstBorder.SelectedItem.Value);
+            TypeConverter converter = TypeDescriptor.GetConverter(typeof(BorderStyle));
+            pnlCard.BorderStyle = (BorderStyle)converter.ConvertFromString(lstBorder.SelectedItem.Text);
+            /*int borderValue = Int32.Parse(lstBorder.SelectedItem.Value);
             pnlCard.BorderStyle = (BorderStyle)borderValue;
-
+            */
             if (chkPicture.Checked)
             {
                 imgDefault.Visible = true;
