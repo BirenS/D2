@@ -1,19 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Drawing.Text;
 using System.ComponentModel;
 
 namespace GreetingsWebApp.sagar
 {
-    public partial class GreetingCardMaker : System.Web.UI.Page
+    public partial class GreetingCardMaker_version3 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            MultiView1.ActiveViewIndex = 0;
             if (!this.IsPostBack)
             {
                 string[] colorArray = Enum.GetNames(typeof(KnownColor));
@@ -54,10 +51,15 @@ namespace GreetingsWebApp.sagar
                 item.Value = ((int)BorderStyle.None).ToString();
 
                 lstBorder.Items.Add(item);
-
-                lstBorder.SelectedIndex = 0;*/
+                */
+                lstBorder.SelectedIndex = 0;
                 imgDefault.ImageUrl = "default.JPG";
             }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            MultiView1.SetActiveView(View2);
         }
         protected void cmdUpdate_Click(object sender, EventArgs e)
         {
@@ -86,5 +88,21 @@ namespace GreetingsWebApp.sagar
             }
             lblGreeting.Text = txtGreeting.Text;
         }
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            MultiView1.SetActiveView(View1);
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            MultiView1.SetActiveView(View3);
+        }
+
+        protected void Button4_Click1(object sender, EventArgs e)
+        {
+            MultiView1.SetActiveView(View2);
+        }
+
+      
     }
 }
