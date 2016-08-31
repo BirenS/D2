@@ -15,8 +15,7 @@
               <asp:View ID="View1" runat="server">
                     Choose a background color:<br />
                     <asp:DropDownList ID="lstBackColor"   runat="server"   Width="194px" Height="22px"/><br /><br />
-                    <asp:Button ID="Button1" runat="server" Text="Next >" CommandName="NextView"  ></asp:Button>
-
+                    <asp:Button ID="Button1" runat="server" CommandArgument="View2" CommandName="SwitchViewByID" Text="Go to View2" />
               </asp:View>
               <asp:View ID="View2" runat="server">
                     Choose a font :<br />
@@ -28,8 +27,7 @@
                    <asp:CheckBox ID="chkPicture" runat="server" Text="Add the default picture" /><br /><br />
        
                  <asp:Button ID="Button2" runat="server" Text="Prev <" CommandName="PrevView" ></asp:Button>
-                 <asp:Button ID="Button3" runat="server" Text="Next >" CommandName="NextView" OnClick="Button3_Click" ></asp:Button>
-
+                <asp:Button ID="Button3" runat="server" CommandArgument="View3" CommandName="SwitchViewByID" Text="Go to View3" />
             </asp:View>
             <asp:View ID="View3" runat="server">
                     Enter The Greeting text Below:<br />
