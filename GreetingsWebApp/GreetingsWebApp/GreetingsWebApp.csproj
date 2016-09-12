@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -166,7 +167,20 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Sagar\defaultpic.png" />
     <Content Include="Sagar\v1_Sagar_97.aspx" />
+    <Content Include="Sagar\v2_Sagar_97.aspx" />
+    <Content Include="Sagar\v3_Sagar_97.aspx" />
+    <Content Include="Sagar\v4_Sagar_97.aspx" />
+    <Content Include="Sagar\v5_Sagar_97.aspx" />
+    <Content Include="Sagar\v6_1_Sagar_97.aspx" />
+    <Content Include="Sagar\v6_2_Sagar_97.aspx" />
+    <Content Include="Sagar\v7_1_Sagar_97.aspx" />
+    <Content Include="Sagar\v7_2_Sagar_97.aspx" />
+    <Content Include="Sagar\v8_1_Sagar_97.aspx" />
+    <Content Include="Sagar\v8_2_Sagar_97.aspx" />
+    <Content Include="Sagar\v9_1_Sagar_97.aspx" />
+    <Content Include="Sagar\v9_2_Sagar_97.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -313,6 +327,90 @@
     </Compile>
     <Compile Include="Sagar\v1_Sagar_97.aspx.designer.cs">
       <DependentUpon>v1_Sagar_97.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sagar\v2_Sagar_97.aspx.cs">
+      <DependentUpon>v2_Sagar_97.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sagar\v2_Sagar_97.aspx.designer.cs">
+      <DependentUpon>v2_Sagar_97.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sagar\v3_Sagar_97.aspx.cs">
+      <DependentUpon>v3_Sagar_97.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sagar\v3_Sagar_97.aspx.designer.cs">
+      <DependentUpon>v3_Sagar_97.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sagar\v4_Sagar_97.aspx.cs">
+      <DependentUpon>v4_Sagar_97.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sagar\v4_Sagar_97.aspx.designer.cs">
+      <DependentUpon>v4_Sagar_97.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sagar\v5_Sagar_97.aspx.cs">
+      <DependentUpon>v5_Sagar_97.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sagar\v5_Sagar_97.aspx.designer.cs">
+      <DependentUpon>v5_Sagar_97.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sagar\v6_1_Sagar_97.aspx.cs">
+      <DependentUpon>v6_1_Sagar_97.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sagar\v6_1_Sagar_97.aspx.designer.cs">
+      <DependentUpon>v6_1_Sagar_97.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sagar\v6_2_Sagar_97.aspx.cs">
+      <DependentUpon>v6_2_Sagar_97.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sagar\v6_2_Sagar_97.aspx.designer.cs">
+      <DependentUpon>v6_2_Sagar_97.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sagar\v7_1_Sagar_97.aspx.cs">
+      <DependentUpon>v7_1_Sagar_97.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sagar\v7_1_Sagar_97.aspx.designer.cs">
+      <DependentUpon>v7_1_Sagar_97.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sagar\v7_2_Sagar_97.aspx.cs">
+      <DependentUpon>v7_2_Sagar_97.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sagar\v7_2_Sagar_97.aspx.designer.cs">
+      <DependentUpon>v7_2_Sagar_97.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sagar\v8_1_Sagar_97.aspx.cs">
+      <DependentUpon>v8_1_Sagar_97.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sagar\v8_1_Sagar_97.aspx.designer.cs">
+      <DependentUpon>v8_1_Sagar_97.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sagar\v8_2_Sagar_97.aspx.cs">
+      <DependentUpon>v8_2_Sagar_97.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sagar\v8_2_Sagar_97.aspx.designer.cs">
+      <DependentUpon>v8_2_Sagar_97.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sagar\v9_1_Sagar_97.aspx.cs">
+      <DependentUpon>v9_1_Sagar_97.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sagar\v9_1_Sagar_97.aspx.designer.cs">
+      <DependentUpon>v9_1_Sagar_97.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sagar\v9_2_Sagar_97.aspx.cs">
+      <DependentUpon>v9_2_Sagar_97.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sagar\v9_2_Sagar_97.aspx.designer.cs">
+      <DependentUpon>v9_2_Sagar_97.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
